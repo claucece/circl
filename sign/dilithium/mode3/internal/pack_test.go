@@ -74,10 +74,18 @@ func TestPolyPackLeGamma1(t *testing.T) {
 		PolyDeriveUniformLeGamma1(&p0, &seed, i)
 		p0.Normalize()
 
-		p0.PackLeGamma1(buf[:])
-		p1.UnpackLeGamma1(buf[:])
+		PolyPackLeGamma1(&p0, buf[:])
+		PolyUnpackLeGamma1(&p1, buf[:])
 		if p0 != p1 {
 			t.Fatalf("%v != %v", p0, p1)
 		}
+	}
+}
+
+func BenchmarkUnpackLeGamma1(b *testing.B) {
+	var p common.Poly
+	var buf [common.PolyLeGamma1Size]byte
+	for i := 0; i < b.N; i++ {
+		PolyUnpackLeGamma1(&p, buf[:])
 	}
 }

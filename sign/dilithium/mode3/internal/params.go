@@ -5,13 +5,14 @@ package internal
 const (
 	Name           = "Dilithium3"
 	UseAES         = false
-	PublicKeySize  = 1472
-	PrivateKeySize = 3504
-	SignatureSize  = 2701
-	K              = 5
-	L              = 4
-	Eta            = 5
+	PublicKeySize  = 1952
+	PrivateKeySize = 4016
+	SignatureSize  = 3293
+	K              = 6
+	L              = 5
+	Eta            = 4
 	DoubleEtaBits  = 4
-	Beta           = 275
-	Omega          = 96
+	Beta           = 196
+	Omega          = 55
+	Tau            = 49
 )

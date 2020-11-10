@@ -1,9 +1,9 @@
 // Code generated from modePkg.templ.go. DO NOT EDIT.
 
 // mode2 implements the CRYSTALS-Dilithium signature scheme Dilithium2
-// as submitted to round2 of the NIST PQC competition and described in
+// as submitted to round3 of the NIST PQC competition and described in
 //
-// https://pq-crystals.org/dilithium/data/dilithium-specification-round2.pdf
+// https://pq-crystals.org/dilithium/data/dilithium-specification-round3.pdf
 package mode2
 
 import (
